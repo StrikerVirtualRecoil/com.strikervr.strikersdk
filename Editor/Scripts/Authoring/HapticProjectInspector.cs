@@ -16,7 +16,6 @@ namespace StrikerLink.Unity.Editor.Authoring
         List<bool> effectsFoldoutToggles = new List<bool>();
 
         List<List<ReorderableList>> reorderableEffectTrackLists = new List<List<ReorderableList>>();
-        bool effectsFoldedOut = true;
 
         float curveHeight = 50;
 
@@ -251,8 +250,8 @@ namespace StrikerLink.Unity.Editor.Authoring
                             int localTrackIndex = j;
 
                             list.getElementNameCallback += (element) => { return effectSequenceListElementNameCallback(element, localEffectIndex, localTrackIndex); };
-                            list.onAddDropdownCallback += (rect, list) => { effectSequenceListDropdownCallback(rect, list, localEffectIndex, localTrackIndex); };
-                            list.onRemoveCallback += (list) => { effectSequenceListRemoveCallback(list, localEffectIndex, localTrackIndex); };
+                            list.onAddDropdownCallback += (rect, l) => { effectSequenceListDropdownCallback(rect, l, localEffectIndex, localTrackIndex); };
+                            list.onRemoveCallback += (l) => { effectSequenceListRemoveCallback(l, localEffectIndex, localTrackIndex); };
                             list.drawElementCallback += (rect, element, label, selected, focused) => { effectSequenceDrawElementCallback(rect, element, label, selected, focused, localEffectIndex, localTrackIndex); };
                             list.getElementHeightCallback += effectSequenceElementHeightCallback;
                             list.label = new GUIContent("Sequence");

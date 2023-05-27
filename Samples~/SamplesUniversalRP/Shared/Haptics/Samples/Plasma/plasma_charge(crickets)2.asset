@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63f559a0f0edd94aa9f54a4dccdec9c, type: 3}
+  m_Name: plasma_charge(crickets)2
+  m_EditorClassIdentifier: 
+  primitiveSequence:
+  - command: vibrate
+    intensity: 0.01
+    frequency: 60
+    duration: 25
+  - command: vibrate
+    intensity: 0.01
+    frequency: 61
+    duration: 25
+  - command: vibrate
+    intensity: 0.01
+    frequency: 62
+    duration: 25
+  - command: vibrate
+    intensity: 0.02
+    frequency: 63
+    duration: 25
+  - command: vibrate
+    intensity: 0.02
+    frequency: 64
+    duration: 25
+  - command: vibrate
+    intensity: 0.02
+    frequency: 65
+    duration: 25
+  - command: vibrate
+    intensity: 0.03
+    frequency: 66
+    duration: 25
+  - command: vibrate
+    intensity: 0.03
+    frequency: 67
+    duration: 25
+  - command: vibrate
+    intensity: 0.03
+    frequency: 68
+    duration: 25
+  - command: vibrate
+    intensity: 0.04
+    frequency: 69
+    duration: 25
+  - command: vibrate
+    intensity: 0.04
+    frequency: 70
+    duration: 25
+  - command: vibrate
+    intensity: 0.04
+    frequency: 71
+    duration: 25
+  - command: vibrate
+    intensity: 0.05
+    frequency: 72
+    duration: 25
+  - command: vibrate
+    intensity: 0.05
+    frequency: 73
+    duration: 25
+  - command: vibrate
+    intensity: 0.05
+    frequency: 74
+    duration: 25
+  - command: vibrate
+    intensity: 0.06
+    frequency: 75
+    duration: 25
+  - command: vibrate
+    intensity: 0.06
+    frequency: 76
+    duration: 25
+  - command: vibrate
+    intensity: 0.06
+    frequency: 77
+    duration: 25
+  - command: vibrate
+    intensity: 0.07
+    frequency: 78
+    duration: 25
+  - command: vibrate
+    intensity: 0.07
+    frequency: 79
+    duration: 25
+  - command: vibrate
+    intensity: 0.07
+    frequency: 80
+    duration: 25
+  - command: vibrate
+    intensity: 0.08
+    frequency: 81
+    duration: 25
+  - command: vibrate
+    intensity: 0.08
+    frequency: 82
+    duration: 25
+  - command: vibrate
+    intensity: 0.08
+    frequency: 83
+    duration: 25
+  - command: vibrate
+    intensity: 0.09
+    frequency: 84
+    duration: 25
+  - command: vibrate
+    intensity: 0.09
+    frequency: 85
+    duration: 25
+  - command: vibrate
+    intensity: 0.09
+    frequency: 86
+    duration: 25
+  - command: vibrate
+    intensity: 0.09
+    frequency: 87
+    duration: 25
+  - command: vibrate
+    intensity: 0.09
+    frequency: 88
+    duration: 25
+  - command: vibrate
+    intensity: 0.09
+    frequency: 89
+    duration: 25
+  - command: vibrate
+    intensity: 0.09
+    frequency: 90
+    duration: 250

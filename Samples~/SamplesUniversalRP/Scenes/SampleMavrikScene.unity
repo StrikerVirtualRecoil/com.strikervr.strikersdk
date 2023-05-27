@@ -339,6 +339,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5426027492958476874, guid: 2d5fafc057805a94dacd378b3e18e3fd, type: 3}
+      propertyPath: applyLedsOnConnect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426027492958476874, guid: 2d5fafc057805a94dacd378b3e18e3fd, type: 3}
+      propertyPath: connectedLedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426027492958476874, guid: 2d5fafc057805a94dacd378b3e18e3fd, type: 3}
+      propertyPath: connectedLedColor.g
+      value: 0.08880368
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426027492958476874, guid: 2d5fafc057805a94dacd378b3e18e3fd, type: 3}
+      propertyPath: connectedLedColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5426027492958476875, guid: 2d5fafc057805a94dacd378b3e18e3fd, type: 3}
       propertyPath: m_RootOrder
       value: 3

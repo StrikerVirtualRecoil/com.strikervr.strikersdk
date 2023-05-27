@@ -1,18 +1,28 @@
 {
   "name": "com.strikervr.strikersdk",
-  "version": "0.4.7",
+  "version": "0.7.0",
   "displayName": "StrikerVR StrikerLink SDK",
   "description": "StrikerVR SDK for Unity",
   "unity": "2019.4",
   "samples": [
     {
+      "displayName": "Samples (Shared)",
+      "description": "Contains sample scripts and other assets that are not render-pipeline specific. You must import these before importing any of the below.",
+      "path": "Samples~/SamplesShared"
+    },
+    {
       "displayName": "Samples (URP)",
-      "description": "Contains sample prefabs, shaders and materials for the Universal Render Pipeline",
+      "description": "Contains sample prefabs, shaders and materials for the Universal Render Pipeline. Please make sure you also import the \"Samples (Shared)\" assets too.",
       "path": "Samples~/SamplesUniversalRP"
+    },
+    {
+      "displayName": "Samples (Input)",
+      "description": "Contains a HTC Vive Tracker profile for OpenXR use, and a TrackerInput script for handling the HTC VIVE Tracker on PCVR and the Wrist Tracker on VIVE Focus 3 Natively",
+      "path": "Samples~/SamplesInput"
     }
   ],
   "dependencies": {
     "com.malee.reorderablelist": "1.0.1",
-    "jillejr.newtonsoft.json-for-unity": "13.0.102"
+    "com.unity.nuget.newtonsoft-json": "3.0.1"
   }
 }

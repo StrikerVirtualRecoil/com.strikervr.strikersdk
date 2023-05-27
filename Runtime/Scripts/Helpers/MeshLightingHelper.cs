@@ -31,10 +31,10 @@ namespace StrikerLink.Unity.Runtime.Helpers
         // Update is called once per frame
         void Update()
         {
-            UpdateGunMeshes();
+            UpdateBlasterMeshes();
         }
 
-        void UpdateGunMeshes()
+        void UpdateBlasterMeshes()
         {
             foreach(SkinnedMeshRenderer blaster in blasterMeshes)
             {

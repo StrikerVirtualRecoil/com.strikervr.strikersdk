@@ -1,0 +1,36 @@
+{
+  "effects": [
+    {
+      "effect_id": "Blaster_Swap",
+      "tracks": [
+        {
+          "deviceId": "fosters",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "vibe_quick",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "samples_palette": [
+    {
+      "sample_id": "vibe_quick",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.1,
+          "frequency": 85,
+          "duration_base": 30
+        }
+      ]
+    }
+  ]
+}

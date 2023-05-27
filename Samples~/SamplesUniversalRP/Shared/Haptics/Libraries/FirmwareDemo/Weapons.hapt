@@ -1,0 +1,414 @@
+{
+  "effects": [
+    {
+      "effect_id": "Rifle Shot",
+      "tracks": [
+        {
+          "deviceId": "fosters",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "RifleVibes",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "shot_w_contact",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "MagazineReload",
+      "tracks": [
+        {
+          "deviceId": "fosterBack",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "reload_crickets",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "reload_thunder",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Shot blast",
+      "tracks": [
+        {
+          "deviceId": "fosters",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "ShottyVibes",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "shot_w_contact_shotgun",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Shot Pump Forward",
+      "tracks": [
+        {
+          "deviceId": "fosterFront",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "Shotgun_pump_Crickets",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "shotgun_pump_forward",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Shot Pump Back",
+      "tracks": [
+        {
+          "deviceId": "fosterBack",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "Shotgun_pump_Crickets",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "shotgun_pump_back",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "samples_palette": [
+    {
+      "sample_id": "RifleVibes",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.25,
+          "frequency": 40,
+          "duration_base": 120
+        }
+      ]
+    },
+    {
+      "sample_id": "shot_w_contact",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 0
+        },
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "reload_crickets",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 1.0,
+          "frequency": 3,
+          "duration_base": 100
+        },
+        {
+          "command": "vibrate",
+          "intensity": 1.0,
+          "frequency": 2,
+          "duration_base": 100
+        },
+        {
+          "command": "vibrate",
+          "intensity": 1.0,
+          "frequency": 1,
+          "duration_base": 100
+        }
+      ]
+    },
+    {
+      "sample_id": "reload_thunder",
+      "sequence": [
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 200
+        },
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.2,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 6
+        },
+        {
+          "command": "pulse",
+          "intensity": 0.2,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "ShottyVibes",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.25,
+          "frequency": 40,
+          "duration_base": 150
+        }
+      ]
+    },
+    {
+      "sample_id": "shot_w_contact_shotgun",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 0
+        },
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.25,
+          "frequency": 20,
+          "duration_base": 150
+        }
+      ]
+    },
+    {
+      "sample_id": "Shotgun_pump_Crickets",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 1.0,
+          "frequency": 3,
+          "duration_base": 100
+        }
+      ]
+    },
+    {
+      "sample_id": "shotgun_pump_forward",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pulse",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "shotgun_pump_back",
+      "sequence": [
+        {
+          "command": "tick",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pulse",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pulse",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.3,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    }
+  ]
+}

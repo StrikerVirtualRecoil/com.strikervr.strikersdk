@@ -1,0 +1,664 @@
+{
+  "effects": [
+    {
+      "effect_id": "Crossbow_Shot",
+      "tracks": [
+        {
+          "deviceId": "fosterBack",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "Crossbow_Shot_vibe 1",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "fosterFront",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "Crossbow_Shot_vibe 2",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "shot_w_contact_crossbow",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Sliding",
+      "tracks": [
+        {
+          "deviceId": "fosters",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "Crossbow_slide",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "Crossbow_slide",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Rope",
+      "tracks": [
+        {
+          "deviceId": "fosterBack",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "RopeExtend1",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "fosterFront",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "RopeExtend2",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "RopeExtendThunder",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Load_1",
+      "tracks": [
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "pulse_lite_1",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Load_2",
+      "tracks": [
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "pulse_lite_2",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Load_3",
+      "tracks": [
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "pulse_lite_3",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Load_4",
+      "tracks": []
+    },
+    {
+      "effect_id": "Crossbow_Load_5",
+      "tracks": [
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "pulse_lite_5",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Load_Locked",
+      "tracks": [
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "pulse_medium",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Crossbow_Reload",
+      "tracks": [
+        {
+          "deviceId": "fosters",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "sample_id_to_play": "Sweep_Up",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "samples_palette": [
+    {
+      "sample_id": "Crossbow_Shot_vibe 1",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.5,
+          "frequency": 40,
+          "duration_base": 100
+        }
+      ]
+    },
+    {
+      "sample_id": "Crossbow_Shot_vibe 2",
+      "sequence": [
+        {
+          "command": "pause",
+          "intensity": 0.5,
+          "frequency": 40,
+          "duration_base": 100
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.1,
+          "frequency": 40,
+          "duration_base": 100
+        }
+      ]
+    },
+    {
+      "sample_id": "shot_w_contact_crossbow",
+      "sequence": [
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 50
+        },
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "Crossbow_slide",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.1,
+          "frequency": 45,
+          "duration_base": 250
+        }
+      ]
+    },
+    {
+      "sample_id": "RopeExtend1",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.1,
+          "frequency": 70,
+          "duration_base": 100
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.1,
+          "frequency": 71,
+          "duration_base": 100
+        }
+      ]
+    },
+    {
+      "sample_id": "RopeExtend2",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.1,
+          "frequency": 76,
+          "duration_base": 100
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.1,
+          "frequency": 74,
+          "duration_base": 100
+        }
+      ]
+    },
+    {
+      "sample_id": "RopeExtendThunder",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.07,
+          "frequency": 20,
+          "duration_base": 100
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.07,
+          "frequency": 22,
+          "duration_base": 100
+        }
+      ]
+    },
+    {
+      "sample_id": "pulse_lite_1",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 0.1,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.5,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.1,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "pulse_lite_2",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 0.2,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.5,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.2,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "pulse_lite_3",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 0.4,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.5,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.4,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "pulse_lite_5",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 0.8,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "pause",
+          "intensity": 0.5,
+          "frequency": -1,
+          "duration_base": 10
+        },
+        {
+          "command": "tick",
+          "intensity": 0.8,
+          "frequency": -1,
+          "duration_base": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "pulse_medium",
+      "sequence": [
+        {
+          "command": "pulse",
+          "intensity": 0.7,
+          "frequency": -1,
+          "duration_base": 20
+        },
+        {
+          "command": "tick",
+          "intensity": 0.5,
+          "frequency": -1,
+          "duration_base": 5
+        },
+        {
+          "command": "tick",
+          "intensity": 0.5,
+          "frequency": -1,
+          "duration_base": 5
+        },
+        {
+          "command": "pause",
+          "intensity": 0.0,
+          "frequency": -1,
+          "duration_base": 15
+        },
+        {
+          "command": "pulse",
+          "intensity": 1.0,
+          "frequency": -1,
+          "duration_base": 5
+        }
+      ]
+    },
+    {
+      "sample_id": "Sweep_Up",
+      "sequence": [
+        {
+          "command": "vibrate",
+          "intensity": 0.01,
+          "frequency": 95,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.02,
+          "frequency": 100,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.03,
+          "frequency": 105,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.04,
+          "frequency": 110,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.05,
+          "frequency": 115,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.06,
+          "frequency": 125,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.07,
+          "frequency": 130,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.08,
+          "frequency": 135,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 140,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 145,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 150,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 155,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 160,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 165,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 170,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 175,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 180,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 185,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 190,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 195,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 200,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 205,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 210,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 215,
+          "duration_base": 40
+        },
+        {
+          "command": "vibrate",
+          "intensity": 0.09,
+          "frequency": 220,
+          "duration_base": 40
+        }
+      ]
+    }
+  ]
+}

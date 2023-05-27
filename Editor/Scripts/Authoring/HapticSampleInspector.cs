@@ -13,8 +13,6 @@ namespace StrikerLink.Unity.Editor.Authoring
     [CustomEditor(typeof(UnityHapticSample))]
     public class HapticSampleInspector : UnityEditor.Editor
     {
-        bool forceApplyModifications = false;
-
         ReorderableList sequenceList;
 
         public override void OnInspectorGUI()
@@ -114,8 +112,6 @@ namespace StrikerLink.Unity.Editor.Authoring
                 frequency = frequency,
                 duration = duration,
             });
-
-            forceApplyModifications = true;
         }
 
         private void paletteDrawElementCallback(Rect rect, SerializedProperty element, GUIContent label, bool selected, bool focused)
@@ -187,8 +183,6 @@ namespace StrikerLink.Unity.Editor.Authoring
             {
                 sample.primitiveSequence.RemoveAt(index);
             }
-
-            forceApplyModifications = true;
         }
 
         private string paletteListElementNameCallback(SerializedProperty element)

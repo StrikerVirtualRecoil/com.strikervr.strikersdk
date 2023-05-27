@@ -123,11 +123,11 @@ Material:
     - _ButtonsColor: {r: 0.0849056, g: 0.0849056, b: 0.0849056, a: 1}
     - _ChargingLEDColor: {r: 1, g: 0.43280405, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GripColor: {r: 0.06666665, g: 0.06666665, b: 0.06666665, a: 1}
+    - _GripColor: {r: 0.0666666, g: 0.0666666, b: 0.0666666, a: 1}
     - _LEDHighColor: {r: 0, g: 1, b: 1, a: 1}
     - _LEDNormalColor: {r: 0.6556604, g: 1, b: 1, a: 1}
     - _LEDRingColor: {r: 0, g: 1, b: 1, a: 1}
     - _LEDStripColor: {r: 0, g: 1, b: 1, a: 1}
     - _PowerLEDColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TouchpadColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
+    - _TouchpadColor: {r: 0.41568622, g: 0.41568622, b: 0.41568622, a: 1}
   m_BuildTextureStacks: []
