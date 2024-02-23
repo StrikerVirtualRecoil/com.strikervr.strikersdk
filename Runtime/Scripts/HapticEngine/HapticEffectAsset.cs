@@ -9,6 +9,7 @@ namespace StrikerLink.Unity.Runtime.HapticEngine
     {
         public string libraryId;
         public string effectName;
+        
         //public float intensityModifier = 1f;
         //public float durationModifier = 1f;
         //public float frequencyModifier = 1f;

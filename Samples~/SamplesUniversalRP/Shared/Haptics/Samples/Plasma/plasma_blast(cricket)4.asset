@@ -13,131 +13,43 @@ MonoBehaviour:
   m_Name: plasma_blast(cricket)4
   m_EditorClassIdentifier: 
   primitiveSequence:
-  - command: vibrate
-    intensity: 0.1
-    frequency: 149
-    duration: 30
-  - command: vibrate
-    intensity: 0.1
-    frequency: 148
-    duration: 30
-  - command: vibrate
-    intensity: 0.1
-    frequency: 147
-    duration: 30
-  - command: vibrate
-    intensity: 0.1
-    frequency: 146
-    duration: 30
-  - command: vibrate
-    intensity: 0.1
-    frequency: 145
-    duration: 30
-  - command: vibrate
-    intensity: 0.09
-    frequency: 144
-    duration: 30
-  - command: vibrate
-    intensity: 0.09
-    frequency: 143
-    duration: 30
-  - command: vibrate
-    intensity: 0.09
-    frequency: 142
-    duration: 30
-  - command: vibrate
-    intensity: 0.08
-    frequency: 141
-    duration: 30
-  - command: vibrate
-    intensity: 0.08
-    frequency: 140
-    duration: 30
-  - command: vibrate
-    intensity: 0.07
-    frequency: 139
-    duration: 30
-  - command: vibrate
-    intensity: 0.07
-    frequency: 138
-    duration: 30
-  - command: vibrate
-    intensity: 0.06
-    frequency: 137
-    duration: 30
-  - command: vibrate
-    intensity: 0.06
-    frequency: 136
-    duration: 30
-  - command: vibrate
-    intensity: 0.05
-    frequency: 135
-    duration: 30
-  - command: vibrate
-    intensity: 0.05
-    frequency: 134
-    duration: 30
-  - command: vibrate
-    intensity: 0.05
-    frequency: 133
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 132
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 131
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 130
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 129
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 128
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 127
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 126
-    duration: 30
-  - command: vibrate
-    intensity: 0.03
-    frequency: 125
-    duration: 30
-  - command: vibrate
-    intensity: 0.03
-    frequency: 124
-    duration: 30
-  - command: vibrate
-    intensity: 0.03
-    frequency: 123
-    duration: 30
-  - command: vibrate
-    intensity: 0.03
-    frequency: 122
-    duration: 30
-  - command: vibrate
-    intensity: 0.02
-    frequency: 121
-    duration: 30
-  - command: vibrate
-    intensity: 0.02
+  - version: 2.0
+    command: vibrate
     frequency: 120
-    duration: 30
-  - command: vibrate
-    intensity: 0.01
-    frequency: 119
-    duration: 30
-  - command: vibrate
-    intensity: 0.01
-    frequency: 118
-    duration: 30
+    frequencyTime: 0
+    duration: 0
+    intensity: 0.2
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
+    frequency: 120
+    frequencyTime: 50
+    duration: 1950
+    intensity: 0.15
+    intensityTime: 50
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
+    frequency: 100
+    frequencyTime: 2000
+    duration: 500
+    intensity: 0
+    intensityTime: 2000
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
+    frequency: 100
+    frequencyTime: 2500
+    duration: 0
+    intensity: 0
+    intensityTime: 2500
+    waveform: 0
+    overlay: 0
+    overDrive: 0

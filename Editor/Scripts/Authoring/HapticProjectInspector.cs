@@ -10,19 +10,25 @@ using UnityEngine;
 
 namespace StrikerLink.Unity.Editor.Authoring
 {
+    // Provides a custom editor window in the Unity Editor for the HapticProject type.
     [CustomEditor(typeof(HapticProject))]
     public class HapticProjectInspector : UnityEditor.Editor
     {
+        // Keeps track of whether each effect is expanded or collapsed in the UI.
         List<bool> effectsFoldoutToggles = new List<bool>();
 
+        // A list of reorderable lists, allowing the effects' tracks to be reordered in the UI.
         List<List<ReorderableList>> reorderableEffectTrackLists = new List<List<ReorderableList>>();
 
-        float curveHeight = 50;
+        float curveHeight = 50; // The height of the curve for visualization.
 
+        // Flags whether the object picker dialog has been opened.
         bool hasOpenedObjectPicker = false;
 
+        // Indicates if the haptic data needs to be resent to devices.
         bool needsResend = true;
 
+        // Enum to represent device selections with unique bitwise values.
         internal enum DeviceSelectionEnum
         {
             DeviceIndex0 = 0x1,
@@ -43,10 +49,11 @@ namespace StrikerLink.Unity.Editor.Authoring
             DeviceIndex16 = 0x32768
         }
 
+        // Called when the custom editor window is displayed in the Unity Editor.
         public override void OnInspectorGUI()
         {
-            HandleEvents();
-            serializedObject.Update();
+            HandleEvents(); // Check for and respond to various editor events.
+            serializedObject.Update(); // Update the serialized object.
 
             EditorGUIUtility.labelWidth = 100f;
             HapticProject proj = (HapticProject)target;
@@ -77,13 +84,15 @@ namespace StrikerLink.Unity.Editor.Authoring
 
             if (EditorGUI.EndChangeCheck())
             {
+                // If any changes were made in the inspector, apply those changes to the actual object.
                 serializedObject.ApplyModifiedProperties();
-                EditorUtility.SetDirty(proj);
+                EditorUtility.SetDirty(proj); // Mark the project as modified.
                 serializedObject.Update();
-                needsResend = true;
+                needsResend = true; // Indicate data needs to be resent to devices.
             }
         }
 
+        // Handles events related to the Unity Editor's object picker dialog.
         void HandleEvents()
         {
             if (Event.current.commandName == "ObjectSelectorClosed" && hasOpenedObjectPicker)
@@ -114,7 +123,7 @@ namespace StrikerLink.Unity.Editor.Authoring
         }
 
         #region Effects UI
-
+        // Draws the UI section for editing effects in the HapticProject.
         void DrawEffectsBox(HapticProject proj)
         {
             //EditorGUILayout.BeginVertical(EditorStyles.helpBox);
@@ -138,12 +147,12 @@ namespace StrikerLink.Unity.Editor.Authoring
 
             while (effectsFoldoutToggles.Count < proj.effects.Count)
             {
-                effectsFoldoutToggles.Add(false);
+                effectsFoldoutToggles.Add(false);// Ensure we have enough toggles for each effect.
             }
 
             while (reorderableEffectTrackLists.Count < proj.effects.Count)
             {
-                reorderableEffectTrackLists.Add(new List<ReorderableList>());
+                reorderableEffectTrackLists.Add(new List<ReorderableList>());// Ensure we have enough reorderable lists for each effect.
             }
 
             if (doCreateEffectsEntry)
@@ -158,6 +167,7 @@ namespace StrikerLink.Unity.Editor.Authoring
 
             int deleteIndex = -1;
 
+            // Loops through and displays each effect in the HapticProject.
             for (int i = 0; i < proj.effects.Count; i++)
             {
                 EditorGUILayout.BeginVertical(new GUIStyle(EditorStyles.helpBox).WithMargin(0, 0, 0, 25));
@@ -194,7 +204,8 @@ namespace StrikerLink.Unity.Editor.Authoring
 
                     int trackDeleteIndex = -1;
 
-                    for(int j = 0; j < proj.effects[i].tracks.Count; j++)
+                    // Loops through and displays each track for the current effect.
+                    for (int j = 0; j < proj.effects[i].tracks.Count; j++)
                     {
                         EditorGUILayout.BeginVertical(new GUIStyle(EditorStyles.helpBox).WithMargin(15, 0, 0, 20).WithPadding(0, 35, 10, 10));
 
@@ -259,6 +270,7 @@ namespace StrikerLink.Unity.Editor.Authoring
                             reorderableEffectTrackLists[i].Add(list);
                         }
 
+                        // Display the reorderable list for the sequence of haptic samples in the current track.
                         reorderableEffectTrackLists[i][j].DoLayoutList();
 
                         EditorGUILayout.EndVertical();
@@ -301,40 +313,18 @@ namespace StrikerLink.Unity.Editor.Authoring
         }
 
         private void effectSequenceListDropdownCallback(Rect buttonRect, ReorderableList list, int effectIndex, int trackIndex)
-        {
-            //GenericMenu addMenu = new GenericMenu();
-
-            //HapticProject proj = (HapticProject)target;
-
+        {   
             EditorGUIUtility.ShowObjectPicker<UnityHapticSample>(null, false, null, ((effectIndex + 5000) << 16) | (trackIndex + 5000));
-            hasOpenedObjectPicker = true;
-            
-            /*foreach(HapticSampleObject.UnityHapticSample sample in proj.palette)
-            {
-                if (sample == null || string.IsNullOrEmpty(sample.id))
-                    continue;
-
-                addMenu.AddItem(new GUIContent(sample.id), false, () =>
-                {
-                    proj.effects[effectIndex].tracks[trackIndex].sequence.Add(new HapticProject.UnityHapticSequence()
-                    {
-                        sampleId = sample.id,
-                    });
-
-                    forceApplyModifications = true;
-                });
-            }
-
-            addMenu.ShowAsContext();*/
+            hasOpenedObjectPicker = true;  
         }
 
         void ShowAddTrackMenu(int effectIndex)
         {
-            GenericMenu addMenu = new GenericMenu();
+            //GenericMenu addMenu = new GenericMenu();
 
             HapticProject proj = (HapticProject)target;
 
-            for(int i = 0; i < HapticEditingConstants.DeviceIdMap.Count; i++)
+            /*for(int i = 0; i < HapticEditingConstants.DeviceIdMap.Count; i++)
             {
                 int optIndex = i;
                 addMenu.AddItem(new GUIContent(HapticEditingConstants.DeviceIdMap[optIndex].Text), false, () =>
@@ -345,14 +335,33 @@ namespace StrikerLink.Unity.Editor.Authoring
                         sequence = new List<HapticProject.UnityHapticSequence>()
                     });
                 });
-            }
+            }*/
 
-            addMenu.ShowAsContext();
+            // Add a new track without setting the deviceId
+        
+                proj.effects[effectIndex].tracks.Add(new HapticProject.UnityHapticTrack()
+                {
+                    deviceId = "", // Initially, the deviceId is not set
+                    sequence = new List<HapticProject.UnityHapticSequence>()
+                });
+           
+
+            //addMenu.ShowAsContext();
         }
 
         private void effectSequenceDrawElementCallback(Rect rect, SerializedProperty element, GUIContent label, bool selected, bool focused, int effectIndex, int trackIndex)
         {
             HapticProject proj = (HapticProject)target;
+            string deviceId = proj.effects[effectIndex].tracks[trackIndex].deviceId;
+            
+
+            // Get the deviceId property from the track
+            //SerializedProperty deviceIdProp = HapticEditingConstants.DeviceIdMap;  //element.FindPropertyRelative("deviceId");
+
+
+            SerializedProperty overlayProp = element.FindPropertyRelative("overlay");
+            SerializedProperty overdriveProp = element.FindPropertyRelative("overdrive");
+            SerializedProperty waveformProp = element.FindPropertyRelative("waveform");
 
             //SerializedProperty propSampleId = element.FindPropertyRelative("sampleId");
             SerializedProperty propSampleObject = element.FindPropertyRelative("sampleObject");
@@ -370,6 +379,8 @@ namespace StrikerLink.Unity.Editor.Authoring
                 return;
 
             float y = rect.y;
+
+            
 
             propSampleObject.objectReferenceValue = EditorGUI.ObjectField(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), "Sample", propSampleObject.objectReferenceValue, typeof(UnityHapticSample), false);
             y += EditorGUIUtility.singleLineHeight + 15f;
@@ -414,6 +425,24 @@ namespace StrikerLink.Unity.Editor.Authoring
                 EditorGUIUtility.labelWidth = oldWidth;
             }
 
+            // Conditional UI based on device type
+            if (deviceId.Equals("hammerTop"))
+            {
+                overlayProp.boolValue = EditorGUI.ToggleLeft(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), "Overlay", overlayProp.boolValue);
+                y += EditorGUIUtility.singleLineHeight + 5f;
+            }
+            else
+            {
+                overlayProp.boolValue = EditorGUI.ToggleLeft(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), "Overlay", overlayProp.boolValue);
+                y += EditorGUIUtility.singleLineHeight + 5f;
+
+                overdriveProp.boolValue = EditorGUI.ToggleLeft(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), "Overdrive", overdriveProp.boolValue);
+                y += EditorGUIUtility.singleLineHeight + 5f;
+
+                waveformProp.enumValueIndex = EditorGUI.Popup(new Rect(rect.x, y, rect.width, EditorGUIUtility.singleLineHeight), "Waveform", waveformProp.enumValueIndex, waveformProp.enumDisplayNames);
+                y += EditorGUIUtility.singleLineHeight + 5f;
+            }
+
             GUI.enabled = guiWasEnabled;
         }
 
@@ -431,8 +460,8 @@ namespace StrikerLink.Unity.Editor.Authoring
             // Sample ID
             height += EditorGUIUtility.singleLineHeight + 15f;
 
-            // Modify Intensity, Frequency and Duration toggles
-            height += (EditorGUIUtility.singleLineHeight + 15f) * 3;
+            // Modify Intensity, Frequency, Duration, Overlay, Overdrive, and Waveform toggles
+            height += (EditorGUIUtility.singleLineHeight + 15f) * 6;
 
             // Intensity Curve
             if (propModifyIntensity.boolValue)

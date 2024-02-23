@@ -13,127 +13,23 @@ MonoBehaviour:
   m_Name: plasma_charge(crickets)1
   m_EditorClassIdentifier: 
   primitiveSequence:
-  - command: vibrate
-    intensity: 0.01
+  - version: 2.0
+    command: vibrate
     frequency: 30
-    duration: 25
-  - command: vibrate
+    frequencyTime: 0
+    duration: 0
     intensity: 0.01
-    frequency: 31
-    duration: 25
-  - command: vibrate
-    intensity: 0.01
-    frequency: 32
-    duration: 25
-  - command: vibrate
-    intensity: 0.02
-    frequency: 33
-    duration: 25
-  - command: vibrate
-    intensity: 0.02
-    frequency: 34
-    duration: 25
-  - command: vibrate
-    intensity: 0.02
-    frequency: 35
-    duration: 25
-  - command: vibrate
-    intensity: 0.03
-    frequency: 36
-    duration: 25
-  - command: vibrate
-    intensity: 0.03
-    frequency: 37
-    duration: 25
-  - command: vibrate
-    intensity: 0.03
-    frequency: 38
-    duration: 25
-  - command: vibrate
-    intensity: 0.04
-    frequency: 39
-    duration: 25
-  - command: vibrate
-    intensity: 0.04
-    frequency: 40
-    duration: 25
-  - command: vibrate
-    intensity: 0.04
-    frequency: 41
-    duration: 25
-  - command: vibrate
-    intensity: 0.05
-    frequency: 42
-    duration: 25
-  - command: vibrate
-    intensity: 0.05
-    frequency: 43
-    duration: 25
-  - command: vibrate
-    intensity: 0.05
-    frequency: 44
-    duration: 25
-  - command: vibrate
-    intensity: 0.06
-    frequency: 45
-    duration: 25
-  - command: vibrate
-    intensity: 0.07
-    frequency: 46
-    duration: 25
-  - command: vibrate
-    intensity: 0.07
-    frequency: 47
-    duration: 25
-  - command: vibrate
-    intensity: 0.07
-    frequency: 48
-    duration: 25
-  - command: vibrate
-    intensity: 0.08
-    frequency: 49
-    duration: 25
-  - command: vibrate
-    intensity: 0.08
-    frequency: 50
-    duration: 25
-  - command: vibrate
-    intensity: 0.08
-    frequency: 51
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 51
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 53
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 54
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 55
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 56
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 57
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 58
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
-    frequency: 59
-    duration: 25
-  - command: vibrate
-    intensity: 0.09
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
     frequency: 60
-    duration: 250
+    frequencyTime: 1000
+    duration: 1000
+    intensity: 0.09
+    intensityTime: 1000
+    waveform: 0
+    overlay: 0
+    overDrive: 0

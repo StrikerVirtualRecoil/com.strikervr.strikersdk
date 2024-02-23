@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: shotgun_pump_forward
   m_EditorClassIdentifier: 
   primitiveSequence:
+  - command: tick
+    intensity: 0.3
+    frequency: -1
+    duration: 10
   - command: pulse
     intensity: 0.3
     frequency: -1
     duration: 10
-  - command: tick
-    intensity: 0.3
-    frequency: -1
-    duration: 10
-  - command: tick
+  - command: pulse
     intensity: 0.3
     frequency: -1
     duration: 10
@@ -29,7 +29,7 @@ MonoBehaviour:
     intensity: 0
     frequency: -1
     duration: 10
-  - command: pulse
+  - command: tick
     intensity: 0.3
     frequency: -1
     duration: 10

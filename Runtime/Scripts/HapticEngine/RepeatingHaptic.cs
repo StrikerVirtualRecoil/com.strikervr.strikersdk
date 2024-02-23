@@ -24,9 +24,9 @@ namespace StrikerLink.Unity.Runtime.HapticEngine
         {
             Asset = asset;
 
-            if(interval < .05f)
+            if(interval < .025f)
             {
-                throw new InvalidOperationException("The Millisecond Interval must be at least 50 to avoid connection saturation");
+                throw new InvalidOperationException("The Millisecond Interval must be at least 25 to avoid connection saturation");
             }
 
             Interval = interval;

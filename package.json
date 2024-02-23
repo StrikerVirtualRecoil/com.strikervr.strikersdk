@@ -1,6 +1,6 @@
 {
   "name": "com.strikervr.strikersdk",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "displayName": "StrikerVR StrikerLink SDK",
   "description": "StrikerVR SDK for Unity",
   "unity": "2019.4",
