@@ -197,7 +197,7 @@ namespace StrikerLink.Unity.Editor.Authoring
 
                     proj.effects[i].id = EditorGUILayout.TextField("Effect ID", proj.effects[i].id);
 
-                    EditorGUILayout.Space(10);
+                    GUILayout.Space(10);
 
                     if (proj.effects[i].tracks == null)
                         proj.effects[i].tracks = new List<HapticProject.UnityHapticTrack>();
@@ -231,7 +231,7 @@ namespace StrikerLink.Unity.Editor.Authoring
                         if(id != null)
                             proj.effects[i].tracks[j].deviceId = id;
 
-                        EditorGUILayout.Space(10);
+                        GUILayout.Space(10);
 
                         if (reorderableEffectTrackLists[i].Count <= j)
                         {

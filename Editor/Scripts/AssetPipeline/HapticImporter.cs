@@ -14,7 +14,11 @@ namespace StrikerLink.Unity.Editor.AssetPipeline
 {
 
     // Mark this class as a scripted importer for assets with the "hapt" extension.
+#if UNITY_2019_3_OR_NEWER
     [ScriptedImporter(1, "hapt", AllowCaching = false)]
+#else
+    [ScriptedImporter(1, "hapt")]
+#endif
     public class HapticImporter : ScriptedImporter
     {
         // This method is invoked when an asset of type "hapt" is imported into Unity.
