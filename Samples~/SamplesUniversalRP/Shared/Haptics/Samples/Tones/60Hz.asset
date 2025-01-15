@@ -20,6 +20,6 @@ MonoBehaviour:
     duration: 1000
     intensity: 1
     intensityTime: 0
-    waveform: 2
+    waveform: 0
     overlay: 0
     overDrive: 0

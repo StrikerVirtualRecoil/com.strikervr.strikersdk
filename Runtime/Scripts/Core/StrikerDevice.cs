@@ -284,49 +284,64 @@ namespace StrikerLink.Unity.Runtime.Core
         {
             lock(gestureQueue)
             {
-                while(gestureQueue.Count > 0) {
-                    PK_GestureEvent ev = gestureQueue.Dequeue();
 
-                    switch(ev.GestureId)
+                try
+                {
+                    if (gestureQueue == null)
+                        return;
+
+                    while (gestureQueue.Count > 0)
                     {
-                        case "ForwardBarGripBackward":
-                            GestureEvents.OnForwardBarGripSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                        PK_GestureEvent ev = gestureQueue.Dequeue();
 
-                        case "ForwardBarGripForward":
-                            GestureEvents.OnForwardBarGripSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                        if (ev == null)
+                            continue;
 
-                        case "ReloadForward":
-                            GestureEvents.OnReloadSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                        switch (ev.GestureId)
+                        {
+                            case "ForwardBarGripBackward":
+                                GestureEvents.OnForwardBarGripSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
 
-                        case "ReloadBackward":
-                            GestureEvents.OnReloadSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                            case "ForwardBarGripForward":
+                                GestureEvents.OnForwardBarGripSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
 
-                        case "SlideBackward":
-                            GestureEvents.OnSlideSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                            case "ReloadForward":
+                                GestureEvents.OnReloadSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
 
-                        case "SlideForward":
-                            GestureEvents.OnSlideSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                            case "ReloadBackward":
+                                GestureEvents.OnReloadSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
 
-                        case "UnderTouchpadPump":
-                            GestureEvents.OnUnderTouchpadPump.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                            case "SlideBackward":
+                                GestureEvents.OnSlideSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
 
-                        case "UnderTouchpadBackward":
-                            GestureEvents.OnUnderTouchpadSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                            case "SlideForward":
+                                GestureEvents.OnSlideSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
 
-                        case "UnderTouchpadForward":
-                            GestureEvents.OnUnderTouchpadSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
-                            break;
+                            case "UnderTouchpadPump":
+                                GestureEvents.OnUnderTouchpadPump.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
+
+                            case "UnderTouchpadBackward":
+                                GestureEvents.OnUnderTouchpadSwipeBackward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
+
+                            case "UnderTouchpadForward":
+                                GestureEvents.OnUnderTouchpadSwipeForward.Invoke(GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                                break;
+                        }
+
+                        GestureEvents.OnGesture.Invoke(ev.GestureId, GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
                     }
-
-                    GestureEvents.OnGesture.Invoke(ev.GestureId, GetGestureStageFromPacket(ev), GetGestureValueFromPacket(ev));
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogException(ex);
                 }
             }
         }
@@ -529,14 +544,14 @@ namespace StrikerLink.Unity.Runtime.Core
                 SensorEvents.OnSlideTouched.Invoke(this);
 
             if (GetSensorUp(DeviceSensor.SlideTouched) && SensorEvents.OnSlideUntouched != null)
-                SensorEvents.OnForwardBarGripUntouched.Invoke(this);
+                SensorEvents.OnSlideUntouched.Invoke(this);
 
             // Reload
             if (GetSensorDown(DeviceSensor.ReloadTouched) && SensorEvents.OnReloadTouched != null)
                 SensorEvents.OnReloadTouched.Invoke(this);
 
             if (GetSensorUp(DeviceSensor.ReloadTouched) && SensorEvents.OnReloadUntouched != null)
-                SensorEvents.OnForwardBarGripUntouched.Invoke(this);
+                SensorEvents.OnReloadUntouched.Invoke(this);
 
             // Forward Bar Grip
             if (GetSensorDown(DeviceSensor.ForwardBarGripTouched) && SensorEvents.OnForwardBarGripTouched != null)
@@ -550,28 +565,28 @@ namespace StrikerLink.Unity.Runtime.Core
                 SensorEvents.OnUnderTouchpadGripTouched.Invoke(this);
 
             if (GetSensorUp(DeviceSensor.UnderTouchpadGripTouched) && SensorEvents.OnUnderTouchpadGripUntouched != null)
-                SensorEvents.OnForwardBarGripUntouched.Invoke(this);
+                SensorEvents.OnUnderTouchpadGripUntouched.Invoke(this);
 
             // Front Hand Grip
             if (GetSensorDown(DeviceSensor.FrontHandGripTouched) && SensorEvents.OnFrontHandGripTouched != null)
                 SensorEvents.OnFrontHandGripTouched.Invoke(this);
 
             if (GetSensorUp(DeviceSensor.FrontHandGripTouched) && SensorEvents.OnFrontHandGripUntouched != null)
-                SensorEvents.OnForwardBarGripUntouched.Invoke(this);
+                SensorEvents.OnFrontHandGripUntouched.Invoke(this);
 
             // Front Hand Grip (Face)
             if (GetSensorDown(DeviceSensor.FrontHandGripFaceTouched) && SensorEvents.OnFrontHandGripFaceTouched != null)
                 SensorEvents.OnFrontHandGripFaceTouched.Invoke(this);
 
             if (GetSensorUp(DeviceSensor.FrontHandGripFaceTouched) && SensorEvents.OnFrontHandGripFaceUntouched != null)
-                SensorEvents.OnForwardBarGripUntouched.Invoke(this);
+                SensorEvents.OnFrontHandGripFaceUntouched.Invoke(this);
 
             // Trigger Grip
             if (GetSensorDown(DeviceSensor.TriggerGripTouched) && SensorEvents.OnTriggerGripTouched != null)
                 SensorEvents.OnTriggerGripTouched.Invoke(this);
 
             if (GetSensorUp(DeviceSensor.TriggerGripTouched) && SensorEvents.OnTriggerGripUntouched != null)
-                SensorEvents.OnForwardBarGripUntouched.Invoke(this);
+                SensorEvents.OnTriggerGripUntouched.Invoke(this);
         }
 
         #region Public API
@@ -919,7 +934,7 @@ namespace StrikerLink.Unity.Runtime.Core
                 count = 1;
 
             duration *= 1000f; // Send in ms
-
+            
             StrikerController.Controller.GetClient().SendBasicLedEffect((ushort)deviceIndex, DeviceBase.LedSequence.Flash, group, mask, new Shared.Haptics.Types.LedCommand.LedColor(primaryColor.r, primaryColor.g, primaryColor.b), new Shared.Haptics.Types.LedCommand.LedColor(secondaryColor.r, secondaryColor.g, secondaryColor.b), duration, count);
         }
 
@@ -951,15 +966,16 @@ namespace StrikerLink.Unity.Runtime.Core
         /// <param name="count">How many times should this effect repeat?</param>
         /// <param name="group">The LED array (top line or front ring) to apply this effect to</param>
         /// <param name="mask">The LEDs (1-6 or all) on the LED array to apply this effect to</param>
-        public void PlayForwardLedEffect(Color primaryColor, Color secondaryColor, float duration = 0.5f, int count = 1, DeviceMavrik.LedGroup group = DeviceMavrik.LedGroup.TopLine, DeviceMavrik.LedMask mask = DeviceMavrik.LedMask.All)
+        public void PlayForwardLedEffect(Color primaryColor, Color secondaryColor, float duration, int count, DeviceMavrik.LedGroup group = DeviceMavrik.LedGroup.TopLine, DeviceMavrik.LedMask mask = DeviceMavrik.LedMask.All)
         {
             if (count < 1)
                 count = 1;
 
-            duration *= 1000f; // Send in ms
-
+            //duration *= 1000f; // Send in ms
+            Debug.Log("Duration" + duration);
             StrikerController.Controller.GetClient().SendBasicLedEffect((ushort)deviceIndex, DeviceBase.LedSequence.DotForward, group, mask, new Shared.Haptics.Types.LedCommand.LedColor(primaryColor.r, primaryColor.g, primaryColor.b), new Shared.Haptics.Types.LedCommand.LedColor(secondaryColor.r, secondaryColor.g, secondaryColor.b), duration, count);
         }
         #endregion
     }
 }
+

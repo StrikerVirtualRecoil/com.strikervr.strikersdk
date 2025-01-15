@@ -35,7 +35,7 @@ namespace StrikerLink.Unity.Authoring
             public string deviceId;
 
             [JsonProperty("sequence")]
-            public List<UnityHapticSequence> sequence;
+            public UnityHapticSequence sequence;
 
 
         }
@@ -279,50 +279,79 @@ namespace StrikerLink.Unity.Authoring
             public List<UnityHapticSample.SerializableHapticSample> SamplesPalette;
         }
 
-        /*public string ToJson()
-        {
-            return JsonConvert.SerializeObject(new UnityHapticPayload()
-            {
-                Effects = effects,
-                SamplesPalette = effects.SelectMany(x => x.tracks)
-                                        .SelectMany(x => x.sequence)
-                                        .Select(x => x.sampleObject).Distinct().Select(x => x.GetSerializableSample()).ToList()
-            }, Formatting.Indented);
-        }*/
-
         public string ToJson()
         {
-            UnityHapticPayload payload = new UnityHapticPayload()
+            // First, collect unique samples 
+            List<UnityHapticSample.SerializableHapticSample> allSamples = new List<UnityHapticSample.SerializableHapticSample>();
+            foreach (var effect in effects)
             {
-                Effects = effects,
-                SamplesPalette = new List<UnityHapticSample.SerializableHapticSample>()
-            };
-
-            foreach (UnityHapticEffect effect in effects)
-            {
-                foreach (UnityHapticTrack track in effect.tracks)
+                foreach (var track in effect.tracks)
                 {
-                    foreach (UnityHapticSequence sequence in track.sequence)
+                    if (track.sequence.sampleObject != null)
                     {
-                        if (sequence.sampleObject != null)
-                        {
-                            UnityHapticSample.SerializableHapticSample serializableSample = sequence.sampleObject.GetSerializableSample();
+                        var serializableSample = track.sequence.sampleObject.GetSerializableSample();
 
-                            // Assuming these methods or similar logic exists to set the overlay, overdrive, and waveform
-                            serializableSample.SetOverlay(sequence.overlay);
-                            serializableSample.SetOverdrive(sequence.overdrive);        
-                            serializableSample.SetWaveform(sequence.waveform);
+                        // Apply overlay, overdrive, waveform, etc. 
+                        serializableSample.SetOverlay(track.sequence.overlay);
+                        serializableSample.SetOverdrive(track.sequence.overdrive);
+                        serializableSample.SetWaveform(track.sequence.waveform);
 
-                            payload.SamplesPalette.Add(serializableSample);
-                        }
+                        allSamples.Add(serializableSample);
                     }
                 }
             }
+            // Remove duplicates
+            allSamples = allSamples.Distinct().ToList();
 
-            // Removing duplicate samples
-            payload.SamplesPalette = payload.SamplesPalette.Distinct().ToList();
+            // Build the "effects" portion of your JSON with an array for each track.sequence
+            var effectsArray = effects.Select(effect => new
+            {
+                // The old JSON used "effect_id" instead of "id"
+                effect_id = effect.id,
 
-            return JsonConvert.SerializeObject(payload, Formatting.Indented);
+                // Each effect has an array of tracks
+                tracks = effect.tracks.Select(track => new
+                {
+                    deviceId = track.deviceId,
+
+                    // Even though we only have one sequence in C#,
+                    // we wrap it in an array so the JSON shows [ { ... } ]
+                    sequence = new[]
+                    {
+                new
+                {
+                    // Mapping your single sequence fields to old JSON property names:
+                    is_modify_intensity = track.sequence.modifyIntensity,
+                    is_modify_frequency = track.sequence.modifyFrequency,
+                    is_modify_duration = track.sequence.modifyDuration,
+                    duration_target = track.sequence.durationTarget,
+                    overlay = track.sequence.overlay,
+                    overdrive = track.sequence.overdrive,
+                    Waveform = (int)track.sequence.waveform,
+
+                    // If you store the sample ID in track.sequence.sampleObject.GetSerializableSample().sampleId
+                    // or in track.sequence.sampleId, map it appropriately:
+                    sample_id_to_play = track.sequence.DerivedSampleId,
+
+                    // If you used to store intensity/frequency curves as arrays, keep them empty or adapt them
+                    factor_intensity = new float[0],
+                    factor_frequency = new float[0]
+                }
+            }
+                }).ToList()
+            }).ToList();
+
+           
+
+            // Combine "effects" and "samples_palette" into the final structure
+            var finalJsonObject = new
+            {
+                effects = effectsArray,
+                samples_palette = allSamples
+            };
+
+            // Convert to JSON string (using JSON.NET, as you do with JsonConvert)
+            return JsonConvert.SerializeObject(finalJsonObject, Formatting.Indented);
         }
 
     }

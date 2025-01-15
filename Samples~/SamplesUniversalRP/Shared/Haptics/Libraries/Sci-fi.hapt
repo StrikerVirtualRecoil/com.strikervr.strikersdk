@@ -14,6 +14,45 @@
               "overlay": false,
               "overdrive": false,
               "Waveform": 0,
+              "sample_id_to_play": "shot_lite_no_contact_mavrik",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "fosters",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "overlay": false,
+              "overdrive": false,
+              "Waveform": 0,
+              "sample_id_to_play": "modulated_buzz",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "effect_id": "Laser Blast 2",
+      "tracks": [
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "overlay": false,
+              "overdrive": false,
+              "Waveform": 0,
               "sample_id_to_play": "Surge_Level_10_thunder",
               "factor_intensity": [],
               "factor_frequency": []
@@ -27,7 +66,7 @@
               "is_modify_intensity": false,
               "is_modify_frequency": false,
               "is_modify_duration": false,
-              "duration_target": 500.0,
+              "duration_target": 0.0,
               "overlay": false,
               "overdrive": false,
               "Waveform": 0,
@@ -44,10 +83,10 @@
               "is_modify_intensity": false,
               "is_modify_frequency": false,
               "is_modify_duration": false,
-              "duration_target": 500.0,
+              "duration_target": 0.0,
               "overlay": false,
               "overdrive": false,
-              "Waveform": 2,
+              "Waveform": 0,
               "sample_id_to_play": "Laser_fire_back",
               "factor_intensity": [],
               "factor_frequency": []
@@ -80,44 +119,16 @@
           "deviceId": "fosterBack",
           "sequence": [
             {
-              "is_modify_intensity": true,
-              "is_modify_frequency": true,
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
               "is_modify_duration": true,
               "duration_target": 500.0,
               "overlay": false,
               "overdrive": false,
               "Waveform": 2,
               "sample_id_to_play": "Laser_fire_back_mod_1",
-              "factor_intensity": [
-                0.497803569,
-                0.5061596,
-                0.5327964,
-                0.5741187,
-                0.626423359,
-                0.686007,
-                0.7491665,
-                0.8121983,
-                0.8713993,
-                0.923066,
-                0.9634954,
-                0.98898387,
-                0.9961395
-              ],
-              "factor_frequency": [
-                1.40803528,
-                1.40074468,
-                1.37855685,
-                1.344454,
-                1.30146086,
-                1.25260186,
-                1.20090163,
-                1.14938486,
-                1.10107589,
-                1.05899942,
-                1.02618,
-                1.00564229,
-                1.00008655
-              ]
+              "factor_intensity": [],
+              "factor_frequency": []
             }
           ]
         },
@@ -125,44 +136,16 @@
           "deviceId": "fosterFront",
           "sequence": [
             {
-              "is_modify_intensity": true,
-              "is_modify_frequency": true,
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
               "is_modify_duration": true,
               "duration_target": 500.0,
               "overlay": false,
               "overdrive": false,
               "Waveform": 2,
-              "sample_id_to_play": "Laser_fire_front_mod_1",
-              "factor_intensity": [
-                0.005432129,
-                0.009759406,
-                0.04881181,
-                0.121963456,
-                0.22124593,
-                0.338690668,
-                0.4663294,
-                0.5961935,
-                0.7203147,
-                0.8307243,
-                0.919454,
-                0.9785355,
-                1.0
-              ],
-              "factor_frequency": [
-                1.39701486,
-                1.38852119,
-                1.36651886,
-                1.3337388,
-                1.29291189,
-                1.24676919,
-                1.19804156,
-                1.14945972,
-                1.10375476,
-                1.06365764,
-                1.03189909,
-                1.0112102,
-                1.004296
-              ]
+              "sample_id_to_play": "Laser_fire_front_mod_2",
+              "factor_intensity": [],
+              "factor_frequency": []
             }
           ]
         }
@@ -193,29 +176,15 @@
           "sequence": [
             {
               "is_modify_intensity": false,
-              "is_modify_frequency": true,
-              "is_modify_duration": false,
-              "duration_target": 0.0,
+              "is_modify_frequency": false,
+              "is_modify_duration": true,
+              "duration_target": 500.0,
               "overlay": false,
               "overdrive": true,
-              "Waveform": 0,
+              "Waveform": 3,
               "sample_id_to_play": "Laser_fire_back_mod_2",
               "factor_intensity": [],
-              "factor_frequency": [
-                1.99731445,
-                1.98464954,
-                1.935645,
-                1.85659933,
-                1.75482571,
-                1.63763714,
-                1.51234674,
-                1.38626766,
-                1.2667129,
-                1.16099572,
-                1.07642913,
-                1.02032614,
-                1.0
-              ]
+              "factor_frequency": []
             }
           ]
         },
@@ -224,29 +193,15 @@
           "sequence": [
             {
               "is_modify_intensity": false,
-              "is_modify_frequency": true,
-              "is_modify_duration": false,
-              "duration_target": 0.0,
+              "is_modify_frequency": false,
+              "is_modify_duration": true,
+              "duration_target": 500.0,
               "overlay": false,
               "overdrive": false,
               "Waveform": 0,
               "sample_id_to_play": "Laser_fire_front_mod_2",
               "factor_intensity": [],
-              "factor_frequency": [
-                1.99357688,
-                1.99357688,
-                1.98737,
-                1.939367,
-                1.8525151,
-                1.73715472,
-                1.60362637,
-                1.46227062,
-                1.32342792,
-                1.19743919,
-                1.09464455,
-                1.02538466,
-                1.0
-              ]
+              "factor_frequency": []
             }
           ]
         }
@@ -278,10 +233,10 @@
             {
               "is_modify_intensity": false,
               "is_modify_frequency": false,
-              "is_modify_duration": true,
-              "duration_target": 278.54,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
               "overlay": false,
-              "overdrive": true,
+              "overdrive": false,
               "Waveform": 0,
               "sample_id_to_play": "Rail_fire_cricket",
               "factor_intensity": [],
@@ -417,7 +372,7 @@
               "overlay": false,
               "overdrive": false,
               "Waveform": 0,
-              "sample_id_to_play": "vibe_sweep_up",
+              "sample_id_to_play": "Sweep_Up",
               "factor_intensity": [],
               "factor_frequency": []
             }
@@ -434,7 +389,7 @@
               "overlay": false,
               "overdrive": false,
               "Waveform": 0,
-              "sample_id_to_play": "Sweep_Up",
+              "sample_id_to_play": "vibe_sweep_up",
               "factor_intensity": [],
               "factor_frequency": []
             }
@@ -444,6 +399,208 @@
     }
   ],
   "samples_palette": [
+    {
+      "sample_id": "shot_lite_no_contact_mavrik",
+      "sequence": [
+        {
+          "version": "2.0",
+          "command": "pulse",
+          "frequency": -100,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "pause",
+          "frequency": -100,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 0.5,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "tick",
+          "frequency": -100,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        }
+      ]
+    },
+    {
+      "sample_id": "modulated_buzz",
+      "sequence": [
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 12000,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.1,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 11700,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.1,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 11500,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.2,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 11200,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.2,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 11000,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.3,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10800,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.3,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10500,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.4,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10300,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.5,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10000,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.6,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9800,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.7,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9500,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.8,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9300,
+          "frequency_time": 0,
+          "duration_base": 25,
+          "intensity": 0.9,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9100,
+          "frequency_time": 0,
+          "duration_base": 50,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        }
+      ]
+    },
     {
       "sample_id": "Surge_Level_10_thunder",
       "sequence": [
@@ -681,7 +838,7 @@
           "duration_base": 20,
           "intensity": 0.1,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -693,7 +850,7 @@
           "duration_base": 20,
           "intensity": 0.1,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -705,7 +862,7 @@
           "duration_base": 20,
           "intensity": 0.2,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -717,7 +874,7 @@
           "duration_base": 20,
           "intensity": 0.2,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -729,7 +886,7 @@
           "duration_base": 20,
           "intensity": 0.3,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -741,7 +898,7 @@
           "duration_base": 20,
           "intensity": 0.3,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -753,7 +910,7 @@
           "duration_base": 20,
           "intensity": 0.4,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -765,7 +922,7 @@
           "duration_base": 20,
           "intensity": 0.5,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -777,7 +934,7 @@
           "duration_base": 20,
           "intensity": 0.6,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -789,7 +946,7 @@
           "duration_base": 20,
           "intensity": 0.7,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -801,7 +958,7 @@
           "duration_base": 20,
           "intensity": 0.8,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -813,7 +970,7 @@
           "duration_base": 20,
           "intensity": 0.9,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -825,7 +982,7 @@
           "duration_base": 20,
           "intensity": 1.0,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         }
@@ -1058,7 +1215,7 @@
       ]
     },
     {
-      "sample_id": "Laser_fire_front_mod_1",
+      "sample_id": "Laser_fire_front_mod_2",
       "sequence": [
         {
           "version": "2.0",
@@ -1068,7 +1225,7 @@
           "duration_base": 20,
           "intensity": 0.1,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1080,7 +1237,7 @@
           "duration_base": 20,
           "intensity": 0.1,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1092,7 +1249,7 @@
           "duration_base": 20,
           "intensity": 0.1,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1104,7 +1261,7 @@
           "duration_base": 20,
           "intensity": 0.2,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1116,7 +1273,7 @@
           "duration_base": 25,
           "intensity": 0.2,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1128,7 +1285,7 @@
           "duration_base": 20,
           "intensity": 0.2,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1140,7 +1297,7 @@
           "duration_base": 20,
           "intensity": 0.3,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1152,7 +1309,7 @@
           "duration_base": 20,
           "intensity": 0.3,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1164,7 +1321,7 @@
           "duration_base": 25,
           "intensity": 0.3,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1176,7 +1333,7 @@
           "duration_base": 20,
           "intensity": 0.4,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1188,7 +1345,7 @@
           "duration_base": 20,
           "intensity": 0.4,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1200,7 +1357,7 @@
           "duration_base": 20,
           "intensity": 0.4,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         },
@@ -1212,7 +1369,7 @@
           "duration_base": 20,
           "intensity": 0.5,
           "intensity_time": 0,
-          "waveform": 2,
+          "waveform": 0,
           "overlay": false,
           "overDrive": false
         }
@@ -1294,7 +1451,7 @@
           "duration_base": 20,
           "intensity": 0.1,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1306,7 +1463,7 @@
           "duration_base": 20,
           "intensity": 0.1,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1318,7 +1475,7 @@
           "duration_base": 20,
           "intensity": 0.2,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1330,7 +1487,7 @@
           "duration_base": 20,
           "intensity": 0.2,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1342,7 +1499,7 @@
           "duration_base": 20,
           "intensity": 0.3,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1354,7 +1511,7 @@
           "duration_base": 20,
           "intensity": 0.3,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1366,7 +1523,7 @@
           "duration_base": 20,
           "intensity": 0.4,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1378,7 +1535,7 @@
           "duration_base": 20,
           "intensity": 0.5,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1390,7 +1547,7 @@
           "duration_base": 20,
           "intensity": 0.6,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1402,7 +1559,7 @@
           "duration_base": 20,
           "intensity": 0.7,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1414,7 +1571,7 @@
           "duration_base": 20,
           "intensity": 0.8,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1426,7 +1583,7 @@
           "duration_base": 20,
           "intensity": 0.9,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         },
@@ -1438,7 +1595,7 @@
           "duration_base": 20,
           "intensity": 1.0,
           "intensity_time": 0,
-          "waveform": 0,
+          "waveform": 3,
           "overlay": false,
           "overDrive": true
         }
@@ -1779,7 +1936,7 @@
           "intensity_time": 0,
           "waveform": 0,
           "overlay": false,
-          "overDrive": true
+          "overDrive": false
         },
         {
           "version": "2.0",
@@ -1791,7 +1948,7 @@
           "intensity_time": 70,
           "waveform": 0,
           "overlay": false,
-          "overDrive": true
+          "overDrive": false
         },
         {
           "version": "2.0",
@@ -1803,7 +1960,7 @@
           "intensity_time": 490,
           "waveform": 0,
           "overlay": false,
-          "overDrive": true
+          "overDrive": false
         },
         {
           "version": "2.0",
@@ -1815,7 +1972,7 @@
           "intensity_time": 491,
           "waveform": 0,
           "overlay": false,
-          "overDrive": true
+          "overDrive": false
         }
       ]
     },
@@ -2858,143 +3015,6 @@
       ]
     },
     {
-      "sample_id": "vibe_sweep_up",
-      "sequence": [
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 8500,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 0.01,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 8800,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 0.01,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 9000,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 0.01,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 9200,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 9500,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 9800,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 10000,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 10200,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 10500,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 10800,
-          "frequency_time": 0,
-          "duration_base": 100,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        },
-        {
-          "version": "2.0",
-          "command": "vibrate",
-          "frequency": 11000,
-          "frequency_time": 0,
-          "duration_base": 50,
-          "intensity": 1.0,
-          "intensity_time": 0,
-          "waveform": 0,
-          "overlay": false,
-          "overDrive": false
-        }
-      ]
-    },
-    {
       "sample_id": "Sweep_Up",
       "sequence": [
         {
@@ -3289,6 +3309,143 @@
           "version": "2.0",
           "command": "vibrate",
           "frequency": 22000,
+          "frequency_time": 0,
+          "duration_base": 50,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        }
+      ]
+    },
+    {
+      "sample_id": "vibe_sweep_up",
+      "sequence": [
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 8500,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 0.01,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 8800,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 0.01,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9000,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 0.01,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9200,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9500,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 9800,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10000,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10200,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10500,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 10800,
+          "frequency_time": 0,
+          "duration_base": 100,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 11000,
           "frequency_time": 0,
           "duration_base": 50,
           "intensity": 1.0,

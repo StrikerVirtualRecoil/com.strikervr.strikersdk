@@ -17,7 +17,7 @@ MonoBehaviour:
     command: vibrate
     frequency: 40
     frequencyTime: 0
-    duration: 1000
+    duration: 4000
     intensity: 1
     intensityTime: 0
     waveform: 0

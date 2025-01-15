@@ -13,103 +13,23 @@ MonoBehaviour:
   m_Name: Sweep_Up
   m_EditorClassIdentifier: 
   primitiveSequence:
-  - command: vibrate
-    intensity: 1
+  - version: 2.0
+    command: vibrate
     frequency: 95
-    duration: 50
-  - command: vibrate
+    frequencyTime: 0
+    duration: 0
     intensity: 1
-    frequency: 100
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 105
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 110
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 115
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 125
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 130
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 135
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 140
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 145
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 150
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 155
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 160
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 165
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 170
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 175
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 180
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 185
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 190
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 195
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 200
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 205
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 210
-    duration: 50
-  - command: vibrate
-    intensity: 1
-    frequency: 215
-    duration: 50
-  - command: vibrate
-    intensity: 1
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
     frequency: 220
-    duration: 50
+    frequencyTime: 1250
+    duration: 1250
+    intensity: 1
+    intensityTime: 1250
+    waveform: 0
+    overlay: 0
+    overDrive: 0

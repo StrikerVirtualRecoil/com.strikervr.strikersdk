@@ -13,103 +13,93 @@ MonoBehaviour:
   m_Name: vibe_sweep_up_short_2
   m_EditorClassIdentifier: 
   primitiveSequence:
-  - command: vibrate
-    intensity: 0.01
+  - version: 2.0
+    command: vibrate
     frequency: 125
-    duration: 30
-  - command: vibrate
+    frequencyTime: 0
+    duration: 0
     intensity: 0.01
-    frequency: 128
-    duration: 30
-  - command: vibrate
-    intensity: 0.01
-    frequency: 130
-    duration: 30
-  - command: vibrate
-    intensity: 0.02
-    frequency: 132
-    duration: 30
-  - command: vibrate
-    intensity: 0.02
-    frequency: 135
-    duration: 30
-  - command: vibrate
-    intensity: 0.03
-    frequency: 138
-    duration: 30
-  - command: vibrate
-    intensity: 0.03
-    frequency: 140
-    duration: 30
-  - command: vibrate
-    intensity: 0.04
-    frequency: 142
-    duration: 30
-  - command: vibrate
-    intensity: 0.05
-    frequency: 145
-    duration: 30
-  - command: vibrate
-    intensity: 0.06
-    frequency: 148
-    duration: 30
-  - command: vibrate
-    intensity: 0.07
-    frequency: 150
-    duration: 30
-  - command: vibrate
-    intensity: 0.08
-    frequency: 152
-    duration: 30
-  - command: vibrate
-    intensity: 0.09
-    frequency: 155
-    duration: 30
-  - command: vibrate
-    intensity: 0.09
-    frequency: 158
-    duration: 30
-  - command: vibrate
-    intensity: 0.1
-    frequency: 160
-    duration: 30
-  - command: vibrate
-    intensity: 0.15
-    frequency: 162
-    duration: 30
-  - command: vibrate
-    intensity: 0.18
-    frequency: 165
-    duration: 30
-  - command: vibrate
-    intensity: 0.2
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
     frequency: 167
-    duration: 30
-  - command: vibrate
-    intensity: 0.25
+    frequencyTime: 540
+    duration: 540
+    intensity: 0.2
+    intensityTime: 540
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
     frequency: 170
+    frequencyTime: 0
     duration: 50
-  - command: pause
-    intensity: 0
-    frequency: -1
-    duration: 50
-  - command: vibrate
     intensity: 0.25
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: pause
+    frequency: -1
+    frequencyTime: 0
+    duration: 50
+    intensity: 0
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
     frequency: 260
+    frequencyTime: 0
     duration: 50
-  - command: pause
-    intensity: 0
-    frequency: -1
-    duration: 50
-  - command: vibrate
     intensity: 0.25
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: pause
+    frequency: -1
+    frequencyTime: 0
+    duration: 50
+    intensity: 0
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
     frequency: 390
+    frequencyTime: 0
     duration: 50
-  - command: pause
-    intensity: 0
-    frequency: -1
-    duration: 50
-  - command: vibrate
     intensity: 0.25
-    frequency: 520
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: pause
+    frequency: -1
+    frequencyTime: 0
     duration: 50
+    intensity: 0
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0
+  - version: 2.0
+    command: vibrate
+    frequency: 520
+    frequencyTime: 0
+    duration: 50
+    intensity: 0.25
+    intensityTime: 0
+    waveform: 0
+    overlay: 0
+    overDrive: 0

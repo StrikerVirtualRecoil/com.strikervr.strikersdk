@@ -14,7 +14,7 @@
               "overlay": false,
               "overdrive": false,
               "Waveform": 0,
-              "sample_id_to_play": "Strike_Level_10_thunder",
+              "sample_id_to_play": "Strike_Level_9_Thunder",
               "factor_intensity": [],
               "factor_frequency": []
             }
@@ -60,11 +60,50 @@
           ]
         }
       ]
+    },
+    {
+      "effect_id": "Blast Striker",
+      "tracks": [
+        {
+          "deviceId": "hammerTop",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "overlay": false,
+              "overdrive": false,
+              "Waveform": 0,
+              "sample_id_to_play": "Strike_Level_10_thunder",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        },
+        {
+          "deviceId": "fosters",
+          "sequence": [
+            {
+              "is_modify_intensity": false,
+              "is_modify_frequency": false,
+              "is_modify_duration": false,
+              "duration_target": 0.0,
+              "overlay": false,
+              "overdrive": false,
+              "Waveform": 0,
+              "sample_id_to_play": "40Hz_pulse",
+              "factor_intensity": [],
+              "factor_frequency": []
+            }
+          ]
+        }
+      ]
     }
   ],
   "samples_palette": [
     {
-      "sample_id": "Strike_Level_10_thunder",
+      "sample_id": "Strike_Level_9_Thunder",
       "sequence": [
         {
           "version": "2.0",
@@ -72,7 +111,7 @@
           "frequency": 0,
           "frequency_time": 0,
           "duration_base": 10,
-          "intensity": 1.0,
+          "intensity": 0.9,
           "intensity_time": 0,
           "waveform": 0,
           "overlay": false,
@@ -84,7 +123,7 @@
           "frequency": 0,
           "frequency_time": 0,
           "duration_base": 10,
-          "intensity": 1.0,
+          "intensity": 0.9,
           "intensity_time": 0,
           "waveform": 0,
           "overlay": false,
@@ -96,7 +135,7 @@
           "frequency": 0,
           "frequency_time": 0,
           "duration_base": 10,
-          "intensity": 1.0,
+          "intensity": 0.9,
           "intensity_time": 0,
           "waveform": 0,
           "overlay": false,
@@ -120,7 +159,7 @@
           "frequency": 0,
           "frequency_time": 0,
           "duration_base": 10,
-          "intensity": 1.0,
+          "intensity": 0.9,
           "intensity_time": 0,
           "waveform": 0,
           "overlay": false,
@@ -172,7 +211,7 @@
           "command": "pause",
           "frequency": 0,
           "frequency_time": 0,
-          "duration_base": 5,
+          "duration_base": 10,
           "intensity": 0.0,
           "intensity_time": 0,
           "waveform": 0,
@@ -215,6 +254,88 @@
           "frequency_time": 0,
           "duration_base": 50,
           "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        }
+      ]
+    },
+    {
+      "sample_id": "Strike_Level_10_thunder",
+      "sequence": [
+        {
+          "version": "2.0",
+          "command": "pulse",
+          "frequency": 0,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "tick",
+          "frequency": 0,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "tick",
+          "frequency": 0,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "pause",
+          "frequency": 0,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 0.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        },
+        {
+          "version": "2.0",
+          "command": "pulse",
+          "frequency": 0,
+          "frequency_time": 0,
+          "duration_base": 10,
+          "intensity": 1.0,
+          "intensity_time": 0,
+          "waveform": 0,
+          "overlay": false,
+          "overDrive": false
+        }
+      ]
+    },
+    {
+      "sample_id": "40Hz_pulse",
+      "sequence": [
+        {
+          "version": "2.0",
+          "command": "vibrate",
+          "frequency": 4000,
+          "frequency_time": 0,
+          "duration_base": 120,
+          "intensity": 0.5,
           "intensity_time": 0,
           "waveform": 0,
           "overlay": false,

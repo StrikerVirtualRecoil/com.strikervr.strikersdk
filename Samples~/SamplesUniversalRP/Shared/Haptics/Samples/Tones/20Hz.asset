@@ -18,7 +18,7 @@ MonoBehaviour:
     frequency: 20
     frequencyTime: 0
     duration: 1000
-    intensity: 0.4
+    intensity: 0.25
     intensityTime: 0
     waveform: 0
     overlay: 0
